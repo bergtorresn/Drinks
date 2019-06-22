@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit!important;
+  display: inline-block;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.text-left {
+  text-align: left!important;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .text-md-center {
+    text-align: center!important;
+  }
+
+  .text-md-left {
+    text-align: left!important;
+  }
+
+  .text-md-right {
+    text-align: right!important;
+  }
+}
+
+body {
+  margin: 0 auto;
+  font-family: Arial;
+  font-size: 16px;
+  color: #000000;
+  background: #ffffff;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+  background: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  z-index: 999;
+}
+
+#header nav {
+  padding-top: 20px;
+}
+
+#header .link-nav {
+  padding: 0 15px;
+}
+#header .link-nav:last-of-type {
+  padding-right: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#highlight {
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+}
+
+#highlight .text-banner {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  right: 0;
+  text-align: right;
+}
+
+#highlight h2 {
+  width: auto;
+  display: inline-block;
+  max-width: 155px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-right: 10%;
+  line-height: 1.3;
+}
+
+.container-drinks-grid {
+  margin: 0 auto;
+  background-image: url('resources/bg-bolhas.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0 40px;
+}
+
+#cards h3 {
+  position: relative;
+  color: #ffffff;
+  margin: 0 auto;
+  top: -58px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+div.align-info {
+  text-align: center;
+}
+
+#promotion {
+  padding: 30px 0;
+}
+
+#promotion h2 {
+  margin: 5px auto;
+  font-size: 35px;
+}
+
+#promotion img {
+  margin-top: 30px;
+}
+
+#promotion h3 {
+  color: #7b7b7b;
+  margin: 5px auto;
+}
+
+.mb-10 {
+  margin-bottom: 10px!important;
+}
+
+#promotion p {
+  margin: 5px auto;
+  font-size: 18px;
+}
+
+.footer {
+  text-align: center;
+  background: #32225c;
+  color: #fff;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+#footer h3 {
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 991px){
+  #highlight h2 {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #highlight h2 {
+    display: none;
+  }
+
+  #header img {
+    max-width: 115px;
+  }
+
+  #header nav {
+    padding-top: 0;
+  }
+
+  #header .link-nav:first-of-type {
+    padding-left: 0;
+  }
+
+  #cards h3 {
+    margin: 0 auto -60px;
+    top: -60px;
+    font-size: 24px;
+  }
+
+  .container-drinks-grid {
+    padding: 0;
+  }
+
+  #promotion h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  #footer h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  #header .link-nav {
+    padding: 0 3px;
+    font-size: 13px;
+  }
+}
